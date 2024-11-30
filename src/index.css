@@ -236,11 +236,36 @@ a:hover {
     font-size: 1.1em;
 }
 
+.review-header {
+    background-color: var(--bg-dark);
+    padding: 0.5rem 1rem 0.25rem;
+}
+
+.review-header a {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.rating {
+    float: right;
+}
+
+.review-body {
+    padding: 0 1rem;
+}
+
 .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+}
+
+@media screen and (max-width: 550px) {
+    .rating {
+        display: block;
+        float: none;
+    }
 }
 
 @media screen and (max-width: 899.97px) {
@@ -261,11 +286,11 @@ a:hover {
     }
 
     .album-main {
-        flex: 5;
+        flex: 7;
     }
 
     .album-sidebar {
-        flex: 2;
+        flex: 5;
     }
 }
 
@@ -293,6 +318,14 @@ a:hover {
         flex: 1;
         margin-left: 2rem;
         max-width: 600px;
+    }
+
+    .album-main {
+        flex: 5;
+    }
+
+    .album-sidebar {
+        flex: 2;
     }
 
     .album-artist::before {

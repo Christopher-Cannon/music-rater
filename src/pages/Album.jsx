@@ -1,3 +1,4 @@
+import { Rating } from "../components";
 import Cover from "../assets/images/casiopea.jpg";
 
 const Album = () => {
@@ -78,6 +79,42 @@ const Album = () => {
                     <hr />
                     <div>
                         <h3>24 Reviews</h3>
+
+                        <article className="review">
+                            <header className="review-header">
+                                <a href="#">SomeReviewer</a>
+                                <span>Aug 15 2015</span>
+                                <Rating rating="3.5" />
+                            </header>
+
+                            <p className="review-body">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Suscipit necessitatibus eum
+                                iusto, numquam ipsa alias aperiam accusantium at
+                                enim modi, assumenda illo, quae dolore esse
+                                expedita unde. Sequi, earum iusto!
+                            </p>
+
+                            <hr />
+                        </article>
+
+                        <article className="review">
+                            <header className="review-header">
+                                <a href="#">SomeOtherReviewer</a>
+                                <span>Aug 21 2015</span>
+                                <Rating rating="3" />
+                            </header>
+
+                            <p className="review-body">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Suscipit necessitatibus eum
+                                iusto, numquam ipsa alias aperiam accusantium at
+                                enim modi, assumenda illo, quae dolore esse
+                                expedita unde. Sequi, earum iusto!
+                            </p>
+
+                            <hr />
+                        </article>
                     </div>
                 </div>
             </div>
