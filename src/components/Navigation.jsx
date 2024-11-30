@@ -1,20 +1,21 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
-function Navigation({ isVisible }) {
+const Navigation = ({ isVisible }) => {
     return (
         <nav
             className={"main-navigation" + (isVisible ? "" : " hide-on-mobile")}
         >
             <ul>
                 <li>
-                    <a href="#">Genres</a>
+                    <Link to="/genres">Genres</Link>
                 </li>
                 <li>
-                    <a href="#">Lists</a>
+                    <Link to="/lists">Lists</Link>
                 </li>
                 <li>
-                    <a href="#">Sign in</a>
+                    <Link to="/login">Sign in</Link>
                 </li>
             </ul>
 
@@ -33,6 +34,6 @@ function Navigation({ isVisible }) {
             </div>
         </nav>
     );
-}
+};
 
 export default Navigation;
