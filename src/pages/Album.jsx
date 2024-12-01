@@ -56,8 +56,16 @@ const Album = () => {
                     <div>
                         <h3>24 Reviews</h3>
 
-                        <Review />
-                        <Review />
+                        <Review
+                            reviewer="SomeGuy15"
+                            publishDate="Aug 15 2015"
+                            rating="3.5"
+                        />
+                        <Review
+                            reviewer="APerson93"
+                            publishDate="Jul 21 2015"
+                            rating="3"
+                        />
                     </div>
                 </div>
             </div>

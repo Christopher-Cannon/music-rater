@@ -1,12 +1,12 @@
 import { Rating } from "../components";
 
-const Review = () => {
+const Review = ({ reviewer, publishDate, rating }) => {
     return (
         <article className="review">
             <header className="review-header">
-                <a href="#">SomeReviewer</a>
-                <span>Aug 15 2015</span>
-                <Rating rating="3.5" />
+                <a href="#">{reviewer}</a>
+                <span>{publishDate}</span>
+                <Rating rating={rating} />
             </header>
 
             <p className="review-body">
