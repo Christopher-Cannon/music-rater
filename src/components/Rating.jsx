@@ -29,6 +29,6 @@ const Rating = ({ rating }) => {
         setStars(output);
     }, []);
 
-    return <span className="rating">{stars.map((stars) => stars)}</span>;
+    return <span className="rating">{stars.map((star) => star)}</span>;
 };
 export default Rating;
