@@ -1,34 +1,25 @@
-import { useEffect, useState } from "react";
 import { StarSolid, StarHalfSolid, StarRegular } from "./stars";
 
 const Rating = ({ rating }) => {
-    const [stars, setStars] = useState([]);
+    let newRating = [
+        <StarRegular key={5} />,
+        <StarRegular key={4} />,
+        <StarRegular key={3} />,
+        <StarRegular key={2} />,
+    ];
 
-    useEffect(() => {
-        let output = [];
-        let key = 0;
+    if (rating % 1) {
+        newRating.unshift(<StarHalfSolid key={parseInt(rating) + 1} />);
+    }
 
-        let solids = Math.floor(parseInt(rating));
-        let regulars = Math.floor(5.0 - parseFloat(rating));
+    for (let i = 0; i < parseInt(rating); i++) {
+        newRating.unshift(<StarSolid key={parseInt(rating) - i} />);
+    }
 
-        for (let i = 0; i < solids; i++) {
-            output.push(<StarSolid key={key} />);
-            key++;
-        }
-
-        if (solids + regulars < 5) {
-            output.push(<StarHalfSolid key={key} />);
-            key++;
-        }
-
-        for (let i = 0; i < regulars; i++) {
-            output.push(<StarRegular key={key} />);
-            key++;
-        }
-
-        setStars(output);
-    }, []);
-
-    return <span className="rating">{stars.map((star) => star)}</span>;
+    return (
+        <span className="rating">
+            {newRating.map((star, idx) => (idx < 5 ? star : ""))}
+        </span>
+    );
 };
 export default Rating;
