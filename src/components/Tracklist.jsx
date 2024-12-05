@@ -3,23 +3,43 @@ import Track from "./Track";
 const tracks = [
     {
         id: 1,
-        title: "Track Title",
-        duration: "12:55",
+        title: "Time Limit",
+        duration: "3:07",
     },
     {
         id: 2,
-        title: "Another Track",
-        duration: "7:24",
+        title: "Tears of the Star",
+        duration: "4:32",
     },
     {
         id: 3,
-        title: "This is Track Three",
-        duration: "3:19",
+        title: "Space Road",
+        duration: "5:14",
     },
     {
         id: 4,
-        title: "Track Title Four",
-        duration: "9:58",
+        title: "Midnight Rendevouz",
+        duration: "5:20",
+    },
+    {
+        id: 5,
+        title: "Far Away",
+        duration: "3:55",
+    },
+    {
+        id: 6,
+        title: "Swallow",
+        duration: "4:24",
+    },
+    {
+        id: 7,
+        title: "Dream Hill",
+        duration: "5:39",
+    },
+    {
+        id: 8,
+        title: "Black Joke",
+        duration: "4:17",
     },
 ];
 

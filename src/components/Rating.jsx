@@ -8,12 +8,14 @@ const Rating = ({ rating }) => {
         <StarRegular key={2} />,
     ];
 
+    const ratingInt = parseInt(rating);
+
     if (rating % 1) {
-        newRating.unshift(<StarHalfSolid key={parseInt(rating) + 1} />);
+        newRating.unshift(<StarHalfSolid key={ratingInt + 1} />);
     }
 
-    for (let i = 0; i < parseInt(rating); i++) {
-        newRating.unshift(<StarSolid key={parseInt(rating) - i} />);
+    for (let i = 0; i < ratingInt; i++) {
+        newRating.unshift(<StarSolid key={ratingInt - i} />);
     }
 
     return (

@@ -23,6 +23,7 @@ const Navigation = ({ isVisible }) => {
                 <input
                     type="search"
                     name="general-search"
+                    placeholder="Search..."
                     className="search-input"
                 />
                 <button type="submit" className="search-btn">
