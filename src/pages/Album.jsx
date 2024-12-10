@@ -11,8 +11,8 @@ const Album = () => {
                 </span>
             </h2>
             <div className="flex-md gap-2">
-                <div className="album-sidebar">
-                    <img src={Cover} alt="" />
+                <div className="sidebar">
+                    <img src={Cover} alt="Album cover" />
 
                     <div>
                         <h3>Tracklist</h3>
@@ -20,27 +20,24 @@ const Album = () => {
                         <Tracklist />
                     </div>
                 </div>
-                <hr className="hide-on-desktop" />
-                <div className="album-main">
-                    <div className="album-info">
+                <div>
+                    <div className="info">
                         <div>
-                            <span className="album-info-category">Type</span>
+                            <span className="info-category">Type</span>
                             <span>Album</span>
                         </div>
                         <div>
-                            <span className="album-info-category">
-                                Released
-                            </span>
+                            <span className="info-category">Released</span>
                             <span>25 May 1979</span>
                         </div>
                         <div>
-                            <span className="album-info-category">Rating</span>
+                            <span className="info-category">Rating</span>
                             <span>
                                 <span className="album-rating">3.88</span> / 5.0
                             </span>
                         </div>
                         <div>
-                            <span className="album-info-category">Genres</span>
+                            <span className="info-category">Genres</span>
                             <span>
                                 <a href="#" className="major-genre">
                                     Jazz Fusion
@@ -50,9 +47,7 @@ const Album = () => {
                             </span>
                         </div>
                         <div>
-                            <span className="album-info-category">
-                                Language
-                            </span>
+                            <span className="info-category">Language</span>
                             <span>Japanese</span>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { MainLayout, Album } from "./pages";
+import { MainLayout, Album, Artist, SignIn } from "./pages";
 
 const router = createBrowserRouter([
     {
@@ -12,16 +12,16 @@ const router = createBrowserRouter([
                 element: <h1>Home</h1>,
             },
             {
-                path: "register",
-                element: <h1>Register</h1>,
-            },
-            {
-                path: "login",
-                element: <h1>Register</h1>,
+                path: "signin",
+                element: <SignIn />,
             },
             {
                 path: "user",
                 element: <h1>User account</h1>,
+            },
+            {
+                path: "artist",
+                element: <Artist />,
             },
             {
                 path: "album",

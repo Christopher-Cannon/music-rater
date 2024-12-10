@@ -66,7 +66,21 @@ h6 {
     font-weight: 700;
 }
 
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
 img {
+    display: block;
     object-fit: cover;
     width: 100%;
 }
@@ -84,6 +98,34 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.btn {
+    background-color: var(--primary);
+    border: 0;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-smaller {
+    padding: 0.25rem;
+}
+
+.info-box {
+    background-color: var(--bg-dark);
+    margin-bottom: 2rem;
+    padding: 0.5rem 1.5rem;
 }
 
 .wrapper {
@@ -224,14 +266,18 @@ a:hover {
     flex: 1;
 }
 
-.album-info {
+.info {
+    border-top: 1px solid var(--bg-dark);
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    font-size: 1.1em;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    width: 100%;
 }
 
-.album-info-category {
+.info-category {
     display: inline-block;
     font-weight: bold;
     margin-right: 1rem;
@@ -241,7 +287,7 @@ a:hover {
 .album-rating,
 .major-genre {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 .album-rating {
@@ -271,11 +317,89 @@ a:hover {
     font-weight: bold;
 }
 
+.album-list-heading {
+    margin-bottom: 0.5rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+table img {
+    display: block;
+    width: 50px;
+}
+
+.table-header {
+    border-bottom: 1px solid var(--bg-dark);
+}
+
+th {
+    font-size: 0.8rem;
+}
+
+td {
+    padding-top: 0.5rem;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 100%;
+}
+
+td:nth-child(n + 3) {
+    text-align: center;
+}
+
+th:nth-child(n + 2),
+td:nth-child(n + 2) {
+    padding-left: 1rem;
+}
+
+td:last-of-type {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.album-list-year,
+td:nth-child(3),
+td:nth-child(4) {
+    font-size: 0.8rem;
+}
+
+.user-list {
+    margin-bottom: 1rem;
+}
+
+.user-list a {
+    display: block;
+}
+
+.user-list a:first-of-type {
+    font-size: 1.1rem;
+}
+
+.user-list a:last-of-type {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
 .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+}
+
+.column {
+    margin-bottom: 2rem;
+}
+
+.sidebar {
+    width: 100%;
 }
 
 @media screen and (max-width: 550px) {
@@ -285,7 +409,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 899.97px) {
+@media screen and (max-width: 980.97px) {
     .album-artist {
         display: block;
     }
@@ -298,20 +422,37 @@ a:hover {
 @media screen and (min-width: 700px) {
     .flex-md {
         display: flex;
-        justify-content: space-between;
         gap: 1rem;
     }
 
-    .album-main {
-        flex: 7;
+    .column {
+        margin-bottom: 1rem;
+        width: 100%;
     }
 
-    .album-sidebar {
-        flex: 5;
+    .sidebar {
+        min-width: 37.5%;
+        max-width: 37.5%;
+    }
+
+    .info {
+        border: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .album-list-year,
+    td:nth-child(3),
+    td:nth-child(4) {
+        font-size: 1rem;
+    }
+
+    .hide-on-laptop {
+        display: none;
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 981px) {
     .wrapper {
         max-width: 1600px;
         margin: auto;
@@ -337,12 +478,9 @@ a:hover {
         max-width: 600px;
     }
 
-    .album-main {
-        flex: 5;
-    }
-
-    .album-sidebar {
-        flex: 2;
+    .flex-lg {
+        display: flex;
+        gap: 2rem;
     }
 
     .album-artist::before {
@@ -352,8 +490,22 @@ a:hover {
     .hide-on-desktop {
         display: none;
     }
+
+    .gap-2 {
+        gap: 2rem;
+    }
 }
 
-.gap-2 {
-    gap: 2rem;
+@media screen and (min-width: 1100px) {
+    .col-thinner {
+        padding: 0 5rem;
+    }
+}
+
+.order-end {
+    order: 100;
+}
+
+.align-left {
+    text-align: left;
 }
