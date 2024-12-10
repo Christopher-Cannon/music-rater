@@ -9,7 +9,7 @@ const Artist = () => {
                 <div className="sidebar">
                     <img src={Cover} alt="Album cover" />
                 </div>
-                <div>
+                <div className="main-bar">
                     <div className="info">
                         <div>
                             <span className="info-category">Formed</span>
@@ -38,7 +38,7 @@ const Artist = () => {
                 </div>
             </div>
             <div className="flex-lg">
-                <div className="main-content order-end">
+                <div className="main-bar order-end">
                     <h3 className="album-list-heading">Album</h3>
 
                     <table>

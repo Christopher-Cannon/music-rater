@@ -20,7 +20,7 @@ const Album = () => {
                         <Tracklist />
                     </div>
                 </div>
-                <div>
+                <div className="main-bar">
                     <div className="info">
                         <div>
                             <span className="info-category">Type</span>

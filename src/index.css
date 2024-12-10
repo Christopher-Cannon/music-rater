@@ -398,6 +398,7 @@ td:nth-child(4) {
     margin-bottom: 2rem;
 }
 
+.main-bar,
 .sidebar {
     width: 100%;
 }
