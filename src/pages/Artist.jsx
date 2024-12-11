@@ -4,13 +4,16 @@ import Cover from "../assets/images/casiopea.jpg";
 const Artist = () => {
     return (
         <>
-            <h2>Casiopea</h2>
-            <div className="flex-md gap-2">
+            <h2 className="hide-on-laptop">Casiopea</h2>
+            <section className="flex-md gap-2 mg-top-md">
                 <div className="sidebar">
                     <img src={Cover} alt="Album cover" />
                 </div>
                 <div className="main-bar">
                     <div className="info">
+                        <h2 className="info-heading hide-on-mobile">
+                            Casiopea
+                        </h2>
                         <div>
                             <span className="info-category">Formed</span>
                             <span>1995, Some Place, Somewhere</span>
@@ -36,8 +39,8 @@ const Artist = () => {
                     </div>
                     <hr className="hide-on-laptop" />
                 </div>
-            </div>
-            <div className="flex-lg">
+            </section>
+            <section className="flex-lg">
                 <div className="main-bar order-end">
                     <h3 className="album-list-heading">Album</h3>
 
@@ -74,7 +77,7 @@ const Artist = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     );
 };

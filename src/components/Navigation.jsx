@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navigation = ({ isVisible }) => {
     return (
         <nav
-            className={"main-navigation" + (isVisible ? "" : " hide-on-mobile")}
+            className={"main-navigation" + (isVisible ? "" : " hide-on-tablet")}
         >
             <ul>
                 <li>

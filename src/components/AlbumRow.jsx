@@ -8,10 +8,7 @@ const AlbumRow = () => {
             </td>
             <td>
                 <a href="/album">
-                    <b>
-                        Album title that is a lot longer than the other albums
-                        on this list
-                    </b>
+                    <b>Album title that is a bit long</b>
                 </a>
                 <div className="album-list-year">1999</div>
             </td>
