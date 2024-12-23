@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { MainLayout, Album, Artist, SignIn } from "./pages";
+import { MainLayout, Home, Album, Artist, SignIn } from "./pages";
 
 const router = createBrowserRouter([
     {
@@ -9,7 +9,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <h1>Home</h1>,
+                element: <Home />,
             },
             {
                 path: "signin",
